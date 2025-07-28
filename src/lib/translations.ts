@@ -59,6 +59,75 @@ export const translations = {
       learnings: "Key Learnings",
       projectNotFound: "Project not found",
       backToProjects: "Back to Projects"
+    },
+    AboutPage: {
+      title: 'About Me',
+      subtitle: 'Learn more about my journey as a fullstack developer',
+      hero: {
+        greeting: 'Hello, I\'m',
+        name: 'Diego Lorandi',
+        title: 'Fullstack Developer',
+        description: 'Passionate about creating digital solutions that make a difference. I specialize in modern web technologies and love turning complex problems into simple, beautiful designs.',
+        location: 'Brazil',
+        experience: '2+ years',
+        availability: 'Available for remote work',
+        locationLabel: 'Location',
+        experienceLabel: 'Experience',
+        availabilityLabel: 'Availability'
+      },
+      background: {
+        title: 'Professional Background',
+        description: 'My journey in software development has been driven by curiosity and passion for technology.',
+        remoteWorkTitle: 'Remote Work Specialist',
+        remoteWorkDescription: 'Experienced in remote collaboration, utilizing modern tools and practices to deliver high-quality results across different time zones. Passionate about creating efficient workflows and maintaining clear communication with international teams.',
+        items: [
+          {
+            period: '2022 - Present',
+            role: 'Fullstack Developer',
+            company: 'Freelance',
+            description: 'Developing web applications with modern technologies, focusing on user experience and performance optimization.'
+          },
+          {
+            period: '2021 - 2022',
+            role: 'Frontend Developer',
+            company: 'Various Projects',
+            description: 'Built responsive websites and web applications using React, TypeScript, and modern CSS frameworks.'
+          }
+        ]
+      },
+      skills: {
+        title: 'Technical Skills',
+        description: 'Technologies I work with on a daily basis',
+        categories: {
+          frontend: 'Frontend',
+          backend: 'Backend', 
+          database: 'Database',
+          tools: 'Tools & Others'
+        }
+      },
+      education: {
+        title: 'Education & Learning',
+        description: 'Continuous learning is key to staying current in technology',
+        items: [
+          {
+            period: '2023 - Present',
+            title: 'Advanced Web Development',
+            institution: 'Self-directed Learning',
+            description: 'Staying current with latest frameworks and best practices'
+          }
+        ]
+      },
+      testimonials: {
+        title: 'What People Say',
+        description: 'Feedback from clients and collaborators',
+        placeholder: 'Testimonials coming soon...'
+      },
+      cta: {
+        title: 'Let\'s Work Together',
+        description: 'Interested in collaborating? I\'d love to hear about your project.',
+        button: 'Get In Touch',
+        resume: 'Download Resume'
+      }
     }
   },
   'pt-BR': {
@@ -121,6 +190,144 @@ export const translations = {
       learnings: "Principais Aprendizados",
       projectNotFound: "Projeto não encontrado",
       backToProjects: "Voltar aos Projetos"
+    },
+    AboutPage: {
+      title: 'Sobre Mim',
+      subtitle: 'Conheça mais sobre minha jornada como desenvolvedor fullstack',
+      hero: {
+        greeting: 'Olá, eu sou',
+        name: 'Diego Lorandi',
+        title: 'Desenvolvedor Fullstack',
+        description: 'Apaixonado por criar soluções digitais que fazem a diferença. Especializo-me em tecnologias web modernas e adoro transformar problemas complexos em designs simples e bonitos.',
+        location: 'Brasil',
+        experience: '2+ anos',
+        availability: 'Disponível para trabalho remoto',
+        locationLabel: 'Localização',
+        experienceLabel: 'Experiência',
+        availabilityLabel: 'Disponibilidade'
+      },
+              background: {
+          title: 'Experiência Profissional',
+          description: 'Minha jornada no desenvolvimento de software tem sido impulsionada pela curiosidade e paixão pela tecnologia.',
+          remoteWorkTitle: 'Especialista em Trabalho Remoto',
+          remoteWorkDescription: 'Experiente em colaboração remota, utilizando ferramentas e práticas modernas para entregar resultados de alta qualidade em diferentes fusos horários. Apaixonado por criar fluxos de trabalho eficientes e manter comunicação clara com equipes internacionais.',
+          items: [
+          {
+            period: '2022 - Presente',
+            role: 'Desenvolvedor Fullstack',
+            company: 'Freelancer',
+            description: 'Desenvolvimento de aplicações web com tecnologias modernas, focando em experiência do usuário e otimização de performance.'
+          },
+          {
+            period: '2021 - 2022',
+            role: 'Desenvolvedor Frontend',
+            company: 'Vários Projetos',
+            description: 'Construção de sites responsivos e aplicações web usando React, TypeScript e frameworks CSS modernos.'
+          }
+        ]
+      },
+      skills: {
+        title: 'Habilidades Técnicas',
+        description: 'Tecnologias com as quais trabalho diariamente',
+        categories: {
+          frontend: 'Frontend',
+          backend: 'Backend',
+          database: 'Banco de Dados',
+          tools: 'Ferramentas e Outros'
+        }
+      },
+      education: {
+        title: 'Educação e Aprendizado',
+        description: 'Aprendizado contínuo é fundamental para se manter atualizado na tecnologia',
+        items: [
+          {
+            period: '2023 - Presente',
+            title: 'Desenvolvimento Web Avançado',
+            institution: 'Aprendizado Autodirigido',
+            description: 'Mantendo-me atualizado com os frameworks mais recentes e melhores práticas'
+          }
+        ]
+      },
+      testimonials: {
+        title: 'O Que As Pessoas Dizem',
+        description: 'Feedback de clientes e colaboradores',
+        placeholder: 'Depoimentos em breve...'
+      },
+      cta: {
+        title: 'Vamos Trabalhar Juntos',
+        description: 'Interessado em colaborar? Adoraria saber sobre seu projeto.',
+        button: 'Entre em Contato',
+        resume: 'Baixar Currículo'
+      }
+    }
+  },
+  AboutPage: {
+    title: 'About Me',
+    subtitle: 'Learn more about my journey as a fullstack developer',
+    hero: {
+      greeting: 'Hello, I\'m',
+      name: 'Diego Lorandi',
+      title: 'Fullstack Developer',
+      description: 'Passionate about creating digital solutions that make a difference. I specialize in modern web technologies and love turning complex problems into simple, beautiful designs.',
+      location: 'Brazil',
+      experience: '2+ years',
+      availability: 'Available for remote work',
+      locationLabel: 'Location',
+      experienceLabel: 'Experience',
+      availabilityLabel: 'Availability'
+    },
+          background: {
+        title: 'Professional Background',
+        description: 'My journey in software development has been driven by curiosity and passion for technology.',
+        remoteWorkTitle: 'Remote Work Specialist',
+        remoteWorkDescription: 'Experienced in remote collaboration, utilizing modern tools and practices to deliver high-quality results across different time zones. Passionate about creating efficient workflows and maintaining clear communication with international teams.',
+        items: [
+        {
+          period: '2022 - Present',
+          role: 'Fullstack Developer',
+          company: 'Freelance',
+          description: 'Developing web applications with modern technologies, focusing on user experience and performance optimization.'
+        },
+        {
+          period: '2021 - 2022',
+          role: 'Frontend Developer',
+          company: 'Various Projects',
+          description: 'Built responsive websites and web applications using React, TypeScript, and modern CSS frameworks.'
+        }
+      ]
+    },
+    skills: {
+      title: 'Technical Skills',
+      description: 'Technologies I work with on a daily basis',
+      categories: {
+        frontend: 'Frontend',
+        backend: 'Backend', 
+        database: 'Database',
+        tools: 'Tools & Others'
+      }
+    },
+    education: {
+      title: 'Education & Learning',
+      description: 'Continuous learning is key to staying current in technology',
+      items: [
+        {
+          period: '2023 - Present',
+          title: 'Advanced Web Development',
+          institution: 'Self-directed Learning',
+          description: 'Staying current with latest frameworks and best practices'
+        }
+      ]
+    },
+    testimonials: {
+      title: 'What People Say',
+      description: 'Feedback from clients and collaborators',
+      placeholder: 'Testimonials coming soon...'
+    },
+    cta: {
+      title: 'Let\'s Work Together',
+      description: 'Interested in collaborating? I\'d love to hear about your project.',
+      button: 'Get In Touch',
+      resume: 'Download Resume'
     }
   }
 } as const; 

@@ -30,15 +30,29 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem('preferred-language', lang);
   };
 
-  // Translation function
+  // Translation function with support for nested keys
   const t = (key: string, section: string = 'HomePage') => {
     const currentTranslations = translations[language];
-    const sectionTranslations = currentTranslations[section as keyof typeof currentTranslations];
     
-    if (sectionTranslations && typeof sectionTranslations === 'object') {
-      return (sectionTranslations as Record<string, string>)[key] || key;
+    // Handle nested section paths like 'AboutPage.background'
+    const sectionParts = section.split('.');
+    let sectionTranslations: any = currentTranslations;
+    
+    // Navigate through nested objects
+    for (const part of sectionParts) {
+      if (sectionTranslations && typeof sectionTranslations === 'object' && part in sectionTranslations) {
+        sectionTranslations = sectionTranslations[part];
+      } else {
+        console.warn(`Translation section not found: ${section}`);
+        return key;
+      }
     }
     
+    if (sectionTranslations && typeof sectionTranslations === 'object' && key in sectionTranslations) {
+      return sectionTranslations[key] || key;
+    }
+    
+    console.warn(`Translation key not found: ${key} in section ${section}`);
     return key;
   };
 
