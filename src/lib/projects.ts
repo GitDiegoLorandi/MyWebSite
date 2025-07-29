@@ -83,14 +83,20 @@ export const projects: Project[] = [
     media: [
       {
         type: 'image',
-        url: '/images/projects/portfolio-hero.jpg',
-        alt: 'Portfolio homepage with hero section',
-        caption: 'Hero section with professional introduction'
+        url: '/images/projects/portfolio-website-hero.jpg',
+        alt: 'Portfolio homepage with hero section showing bilingual toggle and dark mode',
+        caption: 'Hero section with professional introduction and modern design'
+      },
+      {
+        type: 'image',
+        url: '/images/projects/portfolio-website-about.jpg',
+        alt: 'About page showcasing professional background and technical skills',
+        caption: 'Comprehensive about page with technical expertise'
       },
       {
         type: 'youtube',
-        url: 'https://youtube.com/embed/demo-video',
-        alt: 'Portfolio website demo video'
+        url: 'https://youtube.com/embed/portfolio-demo-2025',
+        alt: 'Portfolio website demo video showing features and functionality'
       }
     ],
     links: {
@@ -166,8 +172,20 @@ export const projects: Project[] = [
     media: [
       {
         type: 'image',
-        url: '/images/projects/task-app-dashboard.jpg',
-        alt: 'Task management dashboard'
+        url: '/images/projects/task-management-dashboard.jpg',
+        alt: 'Task management dashboard showing real-time collaboration features',
+        caption: 'Main dashboard with live user activity and task updates'
+      },
+      {
+        type: 'image',
+        url: '/images/projects/task-management-kanban.jpg',
+        alt: 'Kanban board with drag-and-drop functionality',
+        caption: 'Interactive kanban board for project organization'
+      },
+      {
+        type: 'youtube',
+        url: 'https://youtube.com/embed/task-manager-demo-2024',
+        alt: 'Task management application demo showcasing real-time features'
       }
     ],
     links: {
@@ -240,15 +258,27 @@ export const projects: Project[] = [
     media: [
       {
         type: 'image',
-        url: '/images/projects/weather-dashboard.jpg',
-        alt: 'Weather dashboard interface'
+        url: '/images/projects/weather-dashboard-main.jpg',
+        alt: 'Weather dashboard main interface showing current conditions and forecasts',
+        caption: 'Main dashboard with location-based weather data and forecasts'
+      },
+      {
+        type: 'image',
+        url: '/images/projects/weather-dashboard-charts.jpg',
+        alt: 'Interactive charts showing temperature trends and precipitation data',
+        caption: 'Data visualization with Chart.js and D3.js integration'
+      },
+      {
+        type: 'youtube',
+        url: 'https://youtube.com/embed/weather-dashboard-demo-2024',
+        alt: 'Weather dashboard demo showcasing data visualization and API integration'
       }
     ],
     links: {
       live: 'https://weather-dashboard-demo.vercel.app',
       github: 'https://github.com/diegolorandi/weather-dashboard'
     },
-    featured: false,
+    featured: true,
     status: 'completed',
     startDate: '2024-03-01',
     endDate: '2024-04-20',
