@@ -31,17 +31,23 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   };
 
   // Translation function with support for nested keys
-  const t = (key: string, section: string = 'HomePage') => {
+  const t = (key: string, section: string = 'HomePage'): string => {
     const currentTranslations = translations[language];
     
     // Handle nested section paths like 'AboutPage.background'
     const sectionParts = section.split('.');
-    let sectionTranslations: any = currentTranslations;
+    let sectionTranslations: Record<string, unknown> = currentTranslations;
     
     // Navigate through nested objects
     for (const part of sectionParts) {
       if (sectionTranslations && typeof sectionTranslations === 'object' && part in sectionTranslations) {
-        sectionTranslations = sectionTranslations[part];
+        const nextLevel = sectionTranslations[part];
+        if (typeof nextLevel === 'object' && nextLevel !== null) {
+          sectionTranslations = nextLevel as Record<string, unknown>;
+        } else {
+          console.warn(`Translation section not found: ${section}`);
+          return key;
+        }
       } else {
         console.warn(`Translation section not found: ${section}`);
         return key;
@@ -49,7 +55,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
     
     if (sectionTranslations && typeof sectionTranslations === 'object' && key in sectionTranslations) {
-      return sectionTranslations[key] || key;
+      const result = sectionTranslations[key];
+      return typeof result === 'string' ? result : key;
     }
     
     console.warn(`Translation key not found: ${key} in section ${section}`);
