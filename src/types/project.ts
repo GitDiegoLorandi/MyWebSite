@@ -9,6 +9,21 @@ export interface ProjectMedia {
   url: string;
   alt?: string;
   caption?: string;
+  videoType?: 'demo' | 'explanation' | 'tutorial' | 'walkthrough';
+  duration?: string; // e.g., "5:30"
+  thumbnail?: string; // Custom thumbnail if needed
+}
+
+export interface ProjectVideo {
+  id: string;
+  title: string;
+  description: string;
+  youtubeId: string;
+  duration: string;
+  type: 'overview' | 'technical-deep-dive' | 'demo' | 'code-walkthrough';
+  tags: string[];
+  timestamp?: string; // When created
+  language: 'en' | 'pt-BR';
 }
 
 export interface ProjectContent {
@@ -18,6 +33,7 @@ export interface ProjectContent {
   features: string[];
   challenges?: string[];
   learnings?: string[];
+  videos?: ProjectVideo[]; // New: dedicated videos section
 }
 
 export interface ProjectLinks {

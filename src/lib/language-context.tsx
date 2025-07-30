@@ -14,10 +14,15 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  // Always start with 'en' for both server and client consistency
   const [language, setLanguage] = useState<Language>('en');
+  const [hasMounted, setHasMounted] = useState(false);
 
-  // Load language preference from localStorage
+  // Only run on client after mount
   useEffect(() => {
+    setHasMounted(true);
+    
+    // Load saved language from localStorage only after mounting
     const savedLanguage = localStorage.getItem('preferred-language') as Language;
     if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'pt-BR')) {
       setLanguage(savedLanguage);
@@ -27,12 +32,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   // Save language preference to localStorage
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
-    localStorage.setItem('preferred-language', lang);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('preferred-language', lang);
+    }
   };
 
-  // Translation function with support for nested keys
+  // Translation function - always returns English until component is mounted
   const t = (key: string, section: string = 'HomePage'): string => {
-    const currentTranslations = translations[language];
+    // Use English for SSR and initial client render to prevent hydration mismatches
+    const effectiveLanguage = hasMounted ? language : 'en';
+    const currentTranslations = translations[effectiveLanguage];
     
     // Handle nested section paths like 'AboutPage.background'
     const sectionParts = section.split('.');

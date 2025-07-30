@@ -1,11 +1,12 @@
 export const translations = {
   en: {
-    Navigation: {
-      home: "Home",
-      about: "About",
-      projects: "Projects",
-      contact: "Contact"
-    },
+      Navigation: {
+    home: "Home",
+    about: "About",
+    projects: "Projects",
+    videos: "Videos",
+    contact: "Contact"
+  },
     HomePage: {
       title: "Diego Lorandi",
       subtitle: "Fullstack Developer",
@@ -24,6 +25,22 @@ export const translations = {
     Footer: {
       rights: "All rights reserved.",
       builtWith: "Built with Next.js, TypeScript, and Tailwind CSS"
+    },
+    NotFound: {
+      title: "404 - Page Not Found",
+      subtitle: "Oops! This page doesn't exist",
+      description: "The page you're looking for might have been moved, deleted, or doesn't exist. Let's get you back on track.",
+      homeButton: "Go Home",
+      projectsButton: "View Projects",
+      contactButton: "Contact Me"
+    },
+    ErrorBoundary: {
+      title: "Something went wrong",
+      subtitle: "An unexpected error occurred",
+      description: "We apologize for the inconvenience. Please try refreshing the page or return to the homepage.",
+      refreshButton: "Try Again",
+      homeButton: "Go Home",
+      reportIssue: "Report Issue"
     },
     HeroSection: {
       greeting: "Hello, I'm",
@@ -49,6 +66,7 @@ export const translations = {
       filterLibrary: "Libraries",
       statusCompleted: "Completed",
       statusInProgress: "In Progress",
+      "statusIn-progress": "In Progress",
       statusPlanned: "Planned",
       viewProject: "View Project",
       viewCode: "View Code",
@@ -135,6 +153,7 @@ export const translations = {
       home: "Início",
       about: "Sobre",
       projects: "Projetos",
+      videos: "Vídeos",
       contact: "Contato"
     },
     HomePage: {
@@ -155,6 +174,22 @@ export const translations = {
     Footer: {
       rights: "Todos os direitos reservados.",
       builtWith: "Desenvolvido com Next.js, TypeScript e Tailwind CSS"
+    },
+    NotFound: {
+      title: "404 - Página Não Encontrada",
+      subtitle: "Ops! Esta página não existe",
+      description: "A página que você está procurando pode ter sido movida, excluída ou não existe. Vamos te colocar de volta no caminho certo.",
+      homeButton: "Ir para Início",
+      projectsButton: "Ver Projetos",
+      contactButton: "Entre em Contato"
+    },
+    ErrorBoundary: {
+      title: "Algo deu errado",
+      subtitle: "Ocorreu um erro inesperado",
+      description: "Pedimos desculpas pelo inconveniente. Tente atualizar a página ou retornar à página inicial.",
+      refreshButton: "Tentar Novamente",
+      homeButton: "Ir para Início",
+      reportIssue: "Reportar Problema"
     },
         HeroSection: {
       greeting: "Olá, eu sou",
@@ -180,6 +215,7 @@ export const translations = {
       filterLibrary: "Bibliotecas",
       statusCompleted: "Concluído",
       statusInProgress: "Em Andamento",
+      "statusIn-progress": "Em Andamento",
       statusPlanned: "Planejado",
       viewProject: "Ver Projeto",
       viewCode: "Ver Código",

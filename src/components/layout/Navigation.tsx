@@ -10,6 +10,7 @@ const navigationItems = [
   { key: 'home', href: '/' },
   { key: 'about', href: '/about' },
   { key: 'projects', href: '/projects' },
+  { key: 'videos', href: '/videos' },
   { key: 'contact', href: '/contact' },
 ] as const;
 
