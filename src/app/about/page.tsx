@@ -4,7 +4,7 @@ import { ProfessionalBackground } from '../../components/sections/ProfessionalBa
 import { SkillsSection } from '../../components/sections/SkillsSection';
 import { EducationSection } from '../../components/sections/EducationSection';
 import { TestimonialsSection } from '../../components/sections/TestimonialsSection';
-import { ContactCTA } from '../../components/sections/ContactCTA';
+
 import { MDXContentSection } from '../../components/sections/MDXContentSection';
 
 export const metadata: Metadata = {
@@ -68,7 +68,7 @@ export default function AboutPage() {
       <MDXContentSection />
       
       <TestimonialsSection />
-      <ContactCTA />
+
     </main>
   );
 } 

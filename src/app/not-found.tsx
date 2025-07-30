@@ -52,13 +52,7 @@ export default function NotFound() {
               {t.projectsButton}
             </Link>
 
-            <Link
-              href="/#contact"
-              className="group inline-flex items-center gap-2 px-6 py-3 border-2 border-slate-300 dark:border-slate-600 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 font-medium rounded-lg transition-all duration-200 hover:scale-105 focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900"
-            >
-              <Mail size={20} />
-              {t.contactButton}
-            </Link>
+
           </div>
 
           {/* Decorative Elements */}

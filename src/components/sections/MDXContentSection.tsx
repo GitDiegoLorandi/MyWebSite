@@ -88,7 +88,7 @@ When I'm not coding, you'll find me:
 
 ---
 
-*Ready to collaborate on your next project? [Let's get in touch!](/contact)*`
+*Ready to collaborate on your next project? Let's get in touch!*`
   });
 
   const getPortugueseContent = (): MDXContentType => ({
@@ -133,7 +133,7 @@ Quando não estou programando, você me encontrará:
 
 ---
 
-*Pronto para colaborar no seu próximo projeto? [Vamos conversar!](/contact)*`
+*Pronto para colaborar no seu próximo projeto? Vamos conversar!*`
   });
 
   // Parse and render the MDX content as HTML

@@ -60,12 +60,7 @@ export function Footer() {
               >
                 {t('projects', 'Navigation')}
               </Link>
-              <Link
-                href="/contact"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t('contact', 'Navigation')}
-              </Link>
+
             </div>
           </div>
 

@@ -5,7 +5,7 @@ export const translations = {
     about: "About",
     projects: "Projects",
     videos: "Videos",
-    contact: "Contact"
+
   },
     HomePage: {
       title: "Diego Lorandi",
@@ -32,7 +32,7 @@ export const translations = {
       description: "The page you're looking for might have been moved, deleted, or doesn't exist. Let's get you back on track.",
       homeButton: "Go Home",
       projectsButton: "View Projects",
-      contactButton: "Contact Me"
+
     },
     ErrorBoundary: {
       title: "Something went wrong",
@@ -47,7 +47,7 @@ export const translations = {
       name: "Diego Lorandi",
       title: "Fullstack Developer",
       subtitle: "Remote Work Specialist",
-      description: "Building modern web applications with cutting-edge technologies. Specialized in remote collaboration and enterprise-grade solutions from my home office in Brazil.",
+      description: "Building modern web applications with cutting-edge technologies. Currently working on 3 projects including logistics management and e-commerce platforms. Specialized in remote collaboration and enterprise-grade solutions.",
       cta: "View My Projects",
       ctaSecondary: "Get In Touch",
       location: "São Paulo, Brazil",
@@ -57,7 +57,7 @@ export const translations = {
     ProjectsPage: {
       title: "My Projects",
       subtitle: "A showcase of my development work",
-      description: "Explore my portfolio of web applications, tools, and experiments. Each project demonstrates different aspects of modern fullstack development.",
+      description: "Explore my portfolio featuring 2 completed projects and 1 in development. From logistics management to e-commerce platforms, each project demonstrates different aspects of modern fullstack development.",
       filterAll: "All Projects",
       filterWebApp: "Web Apps",
       filterMobileApp: "Mobile Apps",
@@ -77,6 +77,20 @@ export const translations = {
       learnings: "Key Learnings",
       projectNotFound: "Project not found",
       backToProjects: "Back to Projects"
+    },
+    VideosPage: {
+      title: "Project Videos",
+      subtitle: "Watch detailed explanations of my logistics dashboard and portfolio website projects",
+      description: "Dive deep into the technical details, design decisions, and development process behind my completed projects. See how I built real-world solutions with modern technologies.",
+      gallery: {
+        title: "All Project Videos",
+        description: "Filter by type, language, or search for specific topics"
+      },
+      cta: {
+        title: "Subscribe for More Content",
+        description: "Get notified when I upload new project walkthroughs, tutorials, and technical deep dives.",
+        button: "Subscribe to YouTube"
+      }
     },
     AboutPage: {
       title: 'About Me',
@@ -154,7 +168,7 @@ export const translations = {
       about: "Sobre",
       projects: "Projetos",
       videos: "Vídeos",
-      contact: "Contato"
+
     },
     HomePage: {
       title: "Diego Lorandi",
@@ -181,7 +195,7 @@ export const translations = {
       description: "A página que você está procurando pode ter sido movida, excluída ou não existe. Vamos te colocar de volta no caminho certo.",
       homeButton: "Ir para Início",
       projectsButton: "Ver Projetos",
-      contactButton: "Entre em Contato"
+
     },
     ErrorBoundary: {
       title: "Algo deu errado",
@@ -196,7 +210,7 @@ export const translations = {
       name: "Diego Lorandi",
       title: "Desenvolvedor Fullstack",
       subtitle: "Especialista em Trabalho Remoto",
-      description: "Construindo aplicações web modernas com tecnologias de ponta. Especializado em colaboração remota e soluções de nível empresarial do meu home office no Brasil.",
+      description: "Construindo aplicações web modernas com tecnologias de ponta. Atualmente trabalhando em 3 projetos incluindo gerenciamento logístico e plataformas e-commerce. Especializado em colaboração remota e soluções empresariais.",
       cta: "Ver Meus Projetos",
       ctaSecondary: "Entre em Contato",
       location: "São Paulo, Brasil",
@@ -206,7 +220,7 @@ export const translations = {
     ProjectsPage: {
       title: "Meus Projetos",
       subtitle: "Uma vitrine do meu trabalho de desenvolvimento",
-      description: "Explore meu portfólio de aplicações web, ferramentas e experimentos. Cada projeto demonstra diferentes aspectos do desenvolvimento fullstack moderno.",
+      description: "Explore meu portfólio com 2 projetos concluídos e 1 em desenvolvimento. De gerenciamento logístico a plataformas e-commerce, cada projeto demonstra diferentes aspectos do desenvolvimento fullstack moderno.",
       filterAll: "Todos os Projetos",
       filterWebApp: "Aplicações Web",
       filterMobileApp: "Apps Mobile",
@@ -226,6 +240,20 @@ export const translations = {
       learnings: "Principais Aprendizados",
       projectNotFound: "Projeto não encontrado",
       backToProjects: "Voltar aos Projetos"
+    },
+    VideosPage: {
+      title: "Vídeos dos Projetos",
+      subtitle: "Assista explicações detalhadas dos meus projetos de dashboard logístico e site portfolio",
+      description: "Mergulhe nos detalhes técnicos, decisões de design e processo de desenvolvimento por trás dos meus projetos concluídos. Veja como construí soluções reais com tecnologias modernas.",
+      gallery: {
+        title: "Todos os Vídeos dos Projetos",
+        description: "Filtre por tipo, idioma ou pesquise por tópicos específicos"
+      },
+      cta: {
+        title: "Inscreva-se para Mais Conteúdo",
+        description: "Seja notificado quando eu publicar novos tutoriais de projetos, explicações técnicas e análises detalhadas.",
+        button: "Inscrever-se no YouTube"
+      }
     },
     AboutPage: {
       title: 'Sobre Mim',

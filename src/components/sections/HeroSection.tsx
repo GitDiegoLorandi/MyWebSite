@@ -98,12 +98,7 @@ export function HeroSection() {
                 {t('cta', 'HeroSection')}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3 border border-border text-foreground rounded-lg font-medium hover:bg-accent transition-colors"
-              >
-                {t('ctaSecondary', 'HeroSection')}
-              </Link>
+
             </motion.div>
           </motion.div>
 

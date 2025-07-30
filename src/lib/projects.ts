@@ -18,7 +18,7 @@ export const techStacks: Record<string, TechStack> = {
   shadcnui: { name: 'shadcn/ui', category: 'frontend' },
 };
 
-// Sample projects data
+// Real projects data
 export const projects: Project[] = [
   {
     id: '1',
@@ -27,24 +27,27 @@ export const projects: Project[] = [
       en: {
         title: 'Personal Portfolio Website',
         shortDescription: 'Modern portfolio website showcasing fullstack development skills with bilingual support.',
-        description: 'A comprehensive portfolio website built with Next.js 15, featuring a modern design, smooth animations, and full bilingual support. Showcases professional development practices and technical capabilities.',
+        description: 'This portfolio website built with Next.js 15, featuring a modern design, smooth animations, and full bilingual support. Demonstrates professional development practices and technical capabilities for remote work opportunities.',
         features: [
           'Responsive design with mobile-first approach',
           'Dark/Light mode theme switching',
           'Bilingual support (English/Portuguese)',
           'Smooth animations with Framer Motion',
           'Professional project showcase',
-          'Contact form integration'
+          'SEO optimized with metadata',
+          'TypeScript for type safety'
         ],
         challenges: [
           'Implementing seamless language switching without routing complexity',
           'Creating smooth animations while maintaining accessibility',
-          'Optimizing performance for Core Web Vitals'
+          'Optimizing performance for Core Web Vitals',
+          'Structuring content for international audiences'
         ],
         learnings: [
           'Advanced Next.js 15 features and App Router',
           'Professional animation patterns with Framer Motion',
-          'Accessibility-first development approach'
+          'Accessibility-first development approach',
+          'International web development best practices'
         ]
       },
       'pt-BR': {
@@ -104,59 +107,66 @@ export const projects: Project[] = [
       github: 'https://github.com/diegolorandi/portfolio'
     },
     featured: true,
-    status: 'in-progress',
+    status: 'completed',
     startDate: '2025-01-01',
+    endDate: '2025-01-15',
     category: 'web-app',
     difficulty: 'intermediate'
   },
   {
     id: '2',
-    slug: 'task-management-app',
+    slug: 'logistics-dashboard',
     content: {
       en: {
-        title: 'Task Management Application',
-        shortDescription: 'Full-stack task management app with real-time collaboration features.',
-        description: 'A comprehensive task management application built with modern technologies, featuring real-time updates, team collaboration, and advanced project organization capabilities.',
+        title: 'Logistics Management Dashboard',
+        shortDescription: 'Comprehensive logistics dashboard for supply chain management and tracking.',
+        description: 'A full-stack logistics management system featuring real-time shipment tracking, inventory management, and comprehensive analytics. Built to streamline supply chain operations with modern web technologies.',
         features: [
-          'Real-time task updates',
-          'Team collaboration tools',
-          'Project organization',
-          'Due date tracking',
-          'File attachments',
-          'Activity notifications'
+          'Real-time shipment tracking',
+          'Inventory management system',
+          'Interactive analytics dashboard',
+          'Route optimization tools',
+          'Automated notifications',
+          'Multi-warehouse support',
+          'Responsive design for mobile use'
         ],
         challenges: [
-          'Implementing real-time synchronization',
-          'Managing complex state with multiple users',
-          'Optimizing database queries for performance'
+          'Implementing real-time tracking across multiple carriers',
+          'Creating complex data visualizations for logistics metrics',
+          'Managing large datasets with efficient querying',
+          'Integrating with multiple third-party APIs'
         ],
         learnings: [
-          'WebSocket implementation for real-time features',
-          'Advanced database design patterns',
-          'Team collaboration workflow design'
+          'Advanced data visualization techniques',
+          'API integration best practices',
+          'Real-time data processing patterns',
+          'Supply chain management principles'
         ]
       },
       'pt-BR': {
-        title: 'Aplicativo de Gerenciamento de Tarefas',
-        shortDescription: 'App fullstack de gerenciamento de tarefas com recursos de colaboração em tempo real.',
-        description: 'Uma aplicação abrangente de gerenciamento de tarefas construída com tecnologias modernas, apresentando atualizações em tempo real, colaboração em equipe e capacidades avançadas de organização de projetos.',
+        title: 'Dashboard de Gerenciamento Logístico',
+        shortDescription: 'Dashboard abrangente de logística para gerenciamento e rastreamento da cadeia de suprimentos.',
+        description: 'Um sistema fullstack de gerenciamento logístico com rastreamento de remessas em tempo real, gestão de inventário e análises abrangentes. Construído para otimizar operações da cadeia de suprimentos com tecnologias web modernas.',
         features: [
-          'Atualizações de tarefas em tempo real',
-          'Ferramentas de colaboração em equipe',
-          'Organização de projetos',
-          'Rastreamento de prazos',
-          'Anexos de arquivo',
-          'Notificações de atividade'
+          'Rastreamento de remessas em tempo real',
+          'Sistema de gestão de inventário',
+          'Dashboard de análises interativo',
+          'Ferramentas de otimização de rotas',
+          'Notificações automatizadas',
+          'Suporte a múltiplos armazéns',
+          'Design responsivo para uso móvel'
         ],
         challenges: [
-          'Implementar sincronização em tempo real',
-          'Gerenciar estado complexo com múltiplos usuários',
-          'Otimizar consultas de banco de dados para performance'
+          'Implementar rastreamento em tempo real entre múltiplas transportadoras',
+          'Criar visualizações complexas de dados para métricas logísticas',
+          'Gerenciar grandes conjuntos de dados com consultas eficientes',
+          'Integrar com múltiplas APIs de terceiros'
         ],
         learnings: [
-          'Implementação de WebSocket para recursos em tempo real',
-          'Padrões avançados de design de banco de dados',
-          'Design de fluxo de trabalho de colaboração em equipe'
+          'Técnicas avançadas de visualização de dados',
+          'Melhores práticas de integração de API',
+          'Padrões de processamento de dados em tempo real',
+          'Princípios de gerenciamento da cadeia de suprimentos'
         ]
       }
     },
@@ -172,118 +182,116 @@ export const projects: Project[] = [
     media: [
       {
         type: 'image',
-        url: '/images/projects/task-management-dashboard.jpg',
-        alt: 'Task management dashboard showing real-time collaboration features',
-        caption: 'Main dashboard with live user activity and task updates'
+        url: '/images/projects/logistics-dashboard-main.jpg',
+        alt: 'Logistics dashboard main view showing shipment tracking and analytics',
+        caption: 'Main dashboard with real-time logistics tracking and key metrics'
       },
       {
         type: 'image',
-        url: '/images/projects/task-management-kanban.jpg',
-        alt: 'Kanban board with drag-and-drop functionality',
-        caption: 'Interactive kanban board for project organization'
+        url: '/images/projects/logistics-dashboard-analytics.jpg',
+        alt: 'Analytics dashboard with charts and data visualizations',
+        caption: 'Comprehensive analytics view with supply chain insights'
       },
       {
         type: 'youtube',
-        url: 'https://youtube.com/embed/task-manager-demo-2024',
-        alt: 'Task management application demo showcasing real-time features'
+        url: 'https://youtube.com/embed/QQYgCxu988s',
+        alt: 'Logistics dashboard demo showcasing tracking and management features'
       }
     ],
     links: {
-      github: 'https://github.com/diegolorandi/task-manager'
+      github: 'https://github.com/GitDiegoLorandi/logistics-dashboard'
     },
     featured: true,
     status: 'completed',
-    startDate: '2024-06-01',
+    startDate: '2024-08-01',
     endDate: '2024-08-15',
     category: 'web-app',
     difficulty: 'advanced'
   },
   {
     id: '3',
-    slug: 'weather-dashboard',
+    slug: 'e-commerce-platform',
     content: {
       en: {
-        title: 'Weather Dashboard',
-        shortDescription: 'Interactive weather dashboard with location-based forecasts and data visualization.',
-        description: 'A modern weather dashboard application that provides detailed weather information, forecasts, and interactive data visualizations for multiple locations.',
+        title: 'E-commerce Platform',
+        shortDescription: 'Modern e-commerce platform with advanced features for online businesses.',
+        description: 'A comprehensive e-commerce platform currently in development, featuring modern architecture, secure payments, and advanced inventory management. Built with scalability and performance in mind.',
         features: [
-          'Location-based weather data',
-          '7-day weather forecast',
-          'Interactive charts and graphs',
-          'Favorite locations management',
-          'Weather alerts and notifications',
-          'Responsive design for all devices'
+          'Product catalog management',
+          'Shopping cart and checkout',
+          'Secure payment integration',
+          'User authentication and profiles',
+          'Order tracking system',
+          'Admin dashboard',
+          'Inventory management',
+          'Multi-language support'
         ],
         challenges: [
-          'Integrating multiple weather APIs',
-          'Creating responsive data visualizations',
-          'Handling geolocation and permissions'
+          'Implementing secure payment processing',
+          'Building scalable architecture for high traffic',
+          'Creating intuitive admin interfaces',
+          'Ensuring data security and compliance'
         ],
         learnings: [
-          'Working with external APIs and data parsing',
-          'Data visualization with Chart.js',
-          'Progressive Web App implementation'
+          'Advanced e-commerce patterns and best practices',
+          'Payment gateway integration',
+          'Database optimization for transactions',
+          'Security implementation for financial data'
         ]
       },
       'pt-BR': {
-        title: 'Dashboard do Clima',
-        shortDescription: 'Dashboard interativo do clima com previsões baseadas em localização e visualização de dados.',
-        description: 'Uma aplicação moderna de dashboard do clima que fornece informações detalhadas do tempo, previsões e visualizações interativas de dados para múltiplas localizações.',
+        title: 'Plataforma E-commerce',
+        shortDescription: 'Plataforma e-commerce moderna com recursos avançados para negócios online.',
+        description: 'Uma plataforma e-commerce abrangente atualmente em desenvolvimento, com arquitetura moderna, pagamentos seguros e gestão avançada de inventário. Construída com escalabilidade e performance em mente.',
         features: [
-          'Dados climáticos baseados em localização',
-          'Previsão do tempo de 7 dias',
-          'Gráficos e tabelas interativas',
-          'Gerenciamento de locais favoritos',
-          'Alertas e notificações climáticas',
-          'Design responsivo para todos os dispositivos'
+          'Gestão de catálogo de produtos',
+          'Carrinho de compras e checkout',
+          'Integração de pagamentos seguros',
+          'Autenticação e perfis de usuário',
+          'Sistema de rastreamento de pedidos',
+          'Dashboard administrativo',
+          'Gestão de inventário',
+          'Suporte multi-idioma'
         ],
         challenges: [
-          'Integrar múltiplas APIs de clima',
-          'Criar visualizações de dados responsivas',
-          'Lidar com geolocalização e permissões'
+          'Implementar processamento seguro de pagamentos',
+          'Construir arquitetura escalável para alto tráfego',
+          'Criar interfaces administrativas intuitivas',
+          'Garantir segurança de dados e conformidade'
         ],
         learnings: [
-          'Trabalhar com APIs externas e parsing de dados',
-          'Visualização de dados com Chart.js',
-          'Implementação de Progressive Web App'
+          'Padrões avançados de e-commerce e melhores práticas',
+          'Integração de gateway de pagamento',
+          'Otimização de banco de dados para transações',
+          'Implementação de segurança para dados financeiros'
         ]
       }
     },
     techStack: [
+      techStacks.nextjs,
       techStacks.react,
       techStacks.typescript,
       techStacks.tailwind,
-      techStacks.nodejs
+      techStacks.nodejs,
+      techStacks.postgresql,
+      techStacks.prisma
     ],
     media: [
       {
         type: 'image',
-        url: '/images/projects/weather-dashboard-main.jpg',
-        alt: 'Weather dashboard main interface showing current conditions and forecasts',
-        caption: 'Main dashboard with location-based weather data and forecasts'
-      },
-      {
-        type: 'image',
-        url: '/images/projects/weather-dashboard-charts.jpg',
-        alt: 'Interactive charts showing temperature trends and precipitation data',
-        caption: 'Data visualization with Chart.js and D3.js integration'
-      },
-      {
-        type: 'youtube',
-        url: 'https://youtube.com/embed/weather-dashboard-demo-2024',
-        alt: 'Weather dashboard demo showcasing data visualization and API integration'
+        url: '/images/projects/ecommerce-preview.jpg',
+        alt: 'E-commerce platform preview - work in progress',
+        caption: 'Early preview of the e-commerce platform under development'
       }
     ],
     links: {
-      live: 'https://weather-dashboard-demo.vercel.app',
-      github: 'https://github.com/diegolorandi/weather-dashboard'
+      github: 'https://github.com/GitDiegoLorandi/e-commerce-platform'
     },
-    featured: true,
-    status: 'completed',
-    startDate: '2024-03-01',
-    endDate: '2024-04-20',
+    featured: false,
+    status: 'in-progress',
+    startDate: '2025-01-10',
     category: 'web-app',
-    difficulty: 'intermediate'
+    difficulty: 'advanced'
   }
 ];
 
